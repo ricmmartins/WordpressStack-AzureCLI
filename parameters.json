@@ -1,0 +1,65 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "brazilsouth"
+        },
+        "virtualMachineName": {
+            "value": "ubuntuvm"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "rmartins"
+        },
+        "storageAccountName": {
+            "value": "labwordpressdisks001"
+        },
+        "virtualNetworkName": {
+            "value": "LabWordpress-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "ubuntuvm780"
+        },
+        "networkSecurityGroupName": {
+            "value": "ubuntuvm-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "storageAccountType": {
+            "value": "Premium_LRS"
+        },
+        "addressPrefix": {
+            "value": "10.1.1.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.1.1.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "ubuntuvm-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "ex0_vmName": {
+            "value": "ubuntuvm"
+        },
+        "ex0_location": {
+            "value": "brazilsouth"
+        },
+        "ex0_fileUris": {
+            "value": [
+                "https://raw.githubusercontent.com/rmmartins/scripts/master/WordpressStack/wp-stack-install.sh"
+            ]
+        },
+        "ex0_commandToExecute": {
+            "value": "sh wp-stack-install.sh"
+        }
+    }
+}
