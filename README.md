@@ -10,13 +10,15 @@ The ARM script will setup the VM, Network, Storage, Security Group, and an auxil
 
 Bellow the commands:
 ```sh
-azure group create -n <ResourceGroupName> -l "<Location>"
-azure group deployment create --resource-group <ResourceGroupName> --template-file "<template.json path" --parameters-file "parameters.json path"
+az login
+az group create -n <ResourceGroupName> -l "<Location>"
+az group deployment create --resource-group <ResourceGroupName> --template-file "<template.json path" --parameters-file "parameters.json path"
 ```
 In this case:
 ```sh
-azure group create -n LabWordpress -l "Brazil South"
-azure group deployment create --resource-group LabWordpress --template-file "C:\Users\rmartins\Desktop\wp-stack-install\template.json" --parameters-file "C:\Users\rmartins\Desktop\wp-stack-install\parameters.json"
+az login
+az group create -n LabWordpress -l "Brazil South"
+az group deployment create --resource-group LabWordpress --template-file "C:\Users\rmartins\Desktop\wp-stack-install\template.json" --parameters-file "C:\Users\rmartins\Desktop\wp-stack-install\parameters.json"
 ```
 
 
