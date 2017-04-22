@@ -32,4 +32,9 @@ ip=`azure vm show LabWordpress ubuntuvm | grep "Public IP address" | awk -F ':' 
 ssh rmartins@"$ip"
 ```
 
+# Useful Links
+
+* [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+* [Overview Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/overview)
+* [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps)
 
