@@ -18,7 +18,7 @@ In this case:
 ```sh
 azure login
 azure group create -n LabWordpress -l "Brazil South"
-azure group deployment create --resource-group LabWordpress --template-file "C:\Users\rmartins\Desktop\wp-stack-install\template.json" --parameters-file "C:\Users\rmartins\Desktop\wp-stack-install\parameters.json"
+azure group deployment create --resource-group LabWordpress --template-file "template.json" --parameters-file "parameters.json"
 ```
 
 
