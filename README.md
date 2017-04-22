@@ -22,6 +22,11 @@ wget https://raw.githubusercontent.com/rmmartins/WordpressStack-AzureCLI/master/
 azure login
 azure group create -n LabWordpress -l "Brazil South"
 azure group deployment create --resource-group LabWordpress --template-file "template.json" --parameters-file "parameters.json"
+```
+
+And now, connect to VM via SSH:
+
+```
 azure vm show vm show LabWordpress ubuntuvm
 ip=`azure vm show LabWordpress ubuntuvm | grep "Public IP address" | awk -F ':' '{print $3}'`
 ssh rmartins@"$ip"
