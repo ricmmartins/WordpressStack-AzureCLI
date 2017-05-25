@@ -15,7 +15,7 @@
             "value": "rmartins"
         },
         "storageAccountName": {
-            "value": "labwordpressdisks001-demo"
+            "value": "labwordpressdisks001demo"
         },
         "virtualNetworkName": {
             "value": "LabWordpress-vnet"
