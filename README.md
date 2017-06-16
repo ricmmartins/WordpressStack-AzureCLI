@@ -1,3 +1,5 @@
+![alt tag](https://msdnshared.blob.core.windows.net/media/2016/04/Azure-Icon.png)
+
 
 # WordpressStack-AzureCLI
 Template to deploy Wordpress Stack from Azure CLI
