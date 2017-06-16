@@ -10,18 +10,18 @@ The ARM script will setup the VM, Network, Storage, Security Group, and an auxil
 
 Bellow the commands:
 ```sh
-azure login
-azure group create -n <ResourceGroupName> -l "<Location>"
-azure group deployment create --resource-group <ResourceGroupName> --template-file "<template.json path>" --parameters-file "<parameters.json path>"
+az login
+az group create -n <ResourceGroupName> -l "<Location>"
+az group deployment create --resource-group <ResourceGroupName> --template-file "<template.json path>" --parameters "<parameters.json path>"
 ```
 In this case:
 ```sh
 cd /tmp
 wget https://raw.githubusercontent.com/rmmartins/WordpressStack-AzureCLI/master/template.json
 wget https://raw.githubusercontent.com/rmmartins/WordpressStack-AzureCLI/master/parameters.json
-azure login
-azure group create -n LabWordpress -l "Brazil South"
-azure group deployment create --resource-group LabWordpress --template-file "template.json" --parameters-file "parameters.json"
+az login
+az group create -n LabWordpress -l "Brazil South"
+az group deployment create --resource-group LabWordpress --template-file "template.json" --parameters "parameters.json"
 ```
 
 And now, connect to VM via SSH:
