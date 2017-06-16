@@ -27,9 +27,14 @@ az group deployment create --resource-group LabWordpress --template-file "templa
 And now, connect to VM via SSH:
 
 ```
-azure vm show vm show LabWordpress ubuntuvm
-ip=`azure vm show LabWordpress ubuntuvm | grep "Public IP address" | awk -F ':' '{print $3}'`
+ip=`az vm show --resource-group LabWordpress --name ubuntuvm --show-details -d | grep "publicIps" | awk -F'"' '{ print $4}'`
 ssh rmartins@"$ip"
+```
+
+And retrieve all metadata for an instance:
+
+```
+curl -H Metadata:true "http://169.254.169.254/metadata/instance?api-version=2017-03-01"
 ```
 
 # Useful Links
