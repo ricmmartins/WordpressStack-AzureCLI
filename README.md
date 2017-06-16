@@ -31,7 +31,7 @@ ip=`az vm show --resource-group LabWordpress --name ubuntuvm --show-details -d |
 ssh rmartins@"$ip"
 ```
 
-And retrieve all metadata for an instance:
+Once logged, if want  in you can retrieve all metadata from instance
 
 ```
 curl -H Metadata:true "http://169.254.169.254/metadata/instance?api-version=2017-03-01"
