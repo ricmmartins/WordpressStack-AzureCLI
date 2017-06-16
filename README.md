@@ -8,6 +8,8 @@ In this sample we will deploy an ARM template from Azure CLI that creates a Linu
 
 The ARM script will setup the VM, Network, Storage, Security Group, and an auxilliar script shell will do the "internal" settings such nginx installs and more. This script is available at https://github.com/rmmartins/scripts/blob/master/WordpressStack/wp-stack-install.sh
 
+You need to have the [Azure CLI installed](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+
 Bellow the commands:
 ```sh
 az login
@@ -37,9 +39,4 @@ Once logged, if want  in you can retrieve all metadata from instance
 curl -H Metadata:true "http://169.254.169.254/metadata/instance?api-version=2017-03-01"
 ```
 
-# Useful Links
-
-* [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-* [Overview Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/overview)
-* [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps)
 
