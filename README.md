@@ -13,7 +13,7 @@ Bellow the commands:
 ```sh
 az login
 az group create -n <ResourceGroupName> -l "<Location>"
-az group deployment create --resource-group <ResourceGroupName> --template-file "<template.json path>" --parameters "<parameters.json path>"
+az group deployment create --resource-group <ResourceGroupName> --template-file "<template.json path>" --parameters "<parameters.json path> --verbose"
 ```
 In this case:
 ```sh
@@ -22,7 +22,7 @@ wget https://raw.githubusercontent.com/rmmartins/WordpressStack-AzureCLI/master/
 wget https://raw.githubusercontent.com/rmmartins/WordpressStack-AzureCLI/master/parameters.json
 az login
 az group create -n LabWordpress -l "Brazil South"
-az group deployment create --resource-group LabWordpress --template-file "template.json" --parameters "parameters.json"
+az group deployment create --resource-group LabWordpress --template-file "template.json" --parameters "parameters.json" --verbose
 ```
 
 And now, connect to VM via SSH:
