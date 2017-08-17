@@ -38,4 +38,8 @@ Once logged, if want  in you can retrieve all metadata from instance
 curl -H Metadata:true "http://169.254.169.254/metadata/instance?api-version=2017-03-01"
 ```
 
+# Video demonstrations
 
+You can see the demo of CLI deployment here: [https://asciinema.org/a/ct0oEipYq9wCnVfJqpiUxjmKY](https://asciinema.org/a/ct0oEipYq9wCnVfJqpiUxjmKY)
+
+If you would like to see the demo of Visual Studio deployment, see at: [https://youtu.be/joZvr-sP3xE](https://youtu.be/joZvr-sP3xE)
