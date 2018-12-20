@@ -18,8 +18,8 @@ az group deployment create --resource-group <ResourceGroupName> --template-file 
 In this case:
 ```sh
 cd /tmp
-wget https://raw.githubusercontent.com/rmmartins/WordpressStack-AzureCLI/master/template.json
-wget https://raw.githubusercontent.com/rmmartins/WordpressStack-AzureCLI/master/parameters.json
+wget https://raw.githubusercontent.com/ricmmartins/WordpressStack-AzureCLI/master/template.json
+wget https://raw.githubusercontent.com/ricmmartins/WordpressStack-AzureCLI/master/parameters.json
 az login
 az group create -n LabWordpress -l "Brazil South"
 az group deployment create --resource-group LabWordpress --template-file "template.json" --parameters "parameters.json" --verbose
